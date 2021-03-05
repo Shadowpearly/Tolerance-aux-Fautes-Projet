@@ -7,7 +7,7 @@ public class core {
 	@SuppressWarnings({ "removal", "deprecation" })
 	
 	public static void main(String[] args) {
-		int n = 4; //Nombre de données à traiter, mémoire glissante
+		int n = 4; //Nombre de donnÃ©es Ã  traiter, mÃ©moire glissante
 		Data bdd = new Data(n); // instanciation de la memoire stable
 		Capteur c = new Capteur(1); 
 		
@@ -25,10 +25,10 @@ public class core {
 		s2.setCompagnon(s1); // lien de communication S2-S1
 		s2.setMemoire(m2);
 		
-		s1.setWait(1); //S1 attendra 1 sec avant de ré-effectuer son travail
-		s2.setWait(2); //S2 attendra 2 sec avant de ré-effectuer son travail
+		s1.setWait(1); //S1 attendra 1 sec avant de rÃ©-effectuer son travail
+		s2.setWait(2); //S2 attendra 2 sec avant de rÃ©-effectuer son travail
 		
-		s2.setTimeMax(2); // si s1 met plus de 2 sec à répondre, s2 prendra la relève
+		s2.setTimeMax(2); // si s1 met plus de 2 sec Ã  rÃ©pondre, s2 prendra la relÃ¨ve
 		
 
 		Calculateur P1 = new Calculateur(s1, m1);
@@ -45,12 +45,12 @@ public class core {
 		thread2.start();
 		
 		
-		/* ----------------- Commentaire a desactiver si vous souhaiteriez réveiller une faute dans S1 ----------------- */
+		/* ----------------- Commentaire Ã  dÃ©sactiver si vous souhaiteriez rÃ©veiller une faute dans S1 ----------------- */
 		
 
 		/*
 		 
-		// attente de  secondes avant le réveille de la faute
+		// attente de 5 secondes avant le rÃ©veil de la faute
 
 		start = System.currentTimeMillis();
 		while( System.currentTimeMillis() - start < 5*1000); //Attente de 5 sec
